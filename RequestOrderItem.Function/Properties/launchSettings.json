@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "RequestOrderItem.Function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7093",
+      "launchBrowser": false
+    }
+  }
+}
