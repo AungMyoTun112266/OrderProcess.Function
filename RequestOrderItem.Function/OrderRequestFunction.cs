@@ -1,13 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.Functions.Worker;
+﻿using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
-using System.Web.Http.Results;
 
 public  class OrderRequestFunction
 {
+    // ConnectionString is stored in EnvVariables at Azure function
     private readonly ILogger<OrderRequestFunction> _logger;
     private readonly string connectionString = Environment.GetEnvironmentVariable("ConnectionString");
 
