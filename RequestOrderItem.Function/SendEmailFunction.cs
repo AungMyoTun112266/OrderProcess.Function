@@ -30,7 +30,7 @@ namespace OrderRequest.Function
 
             await SendEmailAsync(message.MessageText);
         }
-        // Send Email
+        // Send Email To customer
         public async Task SendEmailAsync(string text)
         {
             try
